@@ -38,6 +38,9 @@ require 'rspec/core'
 require 'rspec/expectations'
 require 'rspec/mocks'
 
+# Enable "its" syntax (although it should be opt-in)
+require 'rspec/its'
+
 # we want access to BaseFormatter
 require 'rspec/core/formatters/base_formatter'
 require 'rspec/core/formatters/html_printer'

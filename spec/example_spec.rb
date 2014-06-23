@@ -136,6 +136,12 @@ describe "expect syntax" do
   end
 end
 
+describe "its syntax" do
+  subject { [1, 2, 3] }
+
+  its(:length) { should eq(3) }
+end
+
 describe "Normal errors" do
   it "should still work" do
     lambda { raise "wtf son" }.should raise_error(Exception)

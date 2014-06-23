@@ -44,6 +44,7 @@ def build_rspec
 
   Opal.use_gem 'rspec'
   Opal.use_gem 'rspec-expectations'
+  Opal.use_gem 'rspec-its'
 
   %w[time fileutils test/unit/assertions coderay optparse shellwords socket uri
      drb/drb diff/lcs diff/lcs/hunk minitest minitest/assertions minitest/unit].each do |asset|
